@@ -9,7 +9,7 @@ try:\
 ⠀⠀⠀new_learnig_technologies = Im_interested_in.add_argument(django)\
 except Exception as lazy:\
 ⠀⠀⠀print(F'Not today please...{lazy}')\
-⠀⠀⠀time.sleep(86400)\
+⠀⠀⠀time.sleep(86400)
     
  
 from companies import joboffer
@@ -17,7 +17,7 @@ from companies import joboffer
 searching_for = joboffer.split('\n')\
 for job in searching_for:\
 ⠀⠀⠀if str(job) == "Google" or str(job) == 'Microsoft':\
-⠀⠀⠀⠀⠀⠀print('contact me please, telegram: t.me/barbiewire')\
+⠀⠀⠀⠀⠀⠀print('contact me please, telegram: t.me/barbiewire')
  
 
 import random \
