@@ -27,4 +27,4 @@ today_im_doing = random.choise(task_list)\
 if today_im_doing == 'nothing':\
 ⠀⠀⠀print('Seems like there is nothing... NO TIME TO REST, we are modifying old projects!')\
 else:\
-⠀⠀⠀print(today_im_doing)\
+⠀⠀⠀print(today_im_doing)
