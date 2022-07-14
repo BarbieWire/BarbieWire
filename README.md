@@ -9,7 +9,7 @@ from Users.exceptions import laziness
 user = BarbieWire()
 user.set_technology({
     'Backend': ('Python', 'Django', 'Django-rest'),
-    'Frontend': (JavaScript, 'HTML5', 'SCCS', 'CSS3', 'React', 'Bootstrap')
+    'Frontend': ('JavaScript', 'HTML5', 'SCCS', 'CSS3', 'React', 'Bootstrap')
 })
 
 try:
