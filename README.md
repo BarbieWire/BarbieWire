@@ -2,31 +2,28 @@
 
 ```python
 import time
-from information.about import BarbieWire
 
-Im_interested_in = BarbieWire.programmingLanguage(Python)
+from Users import BarbieWire
+from Users.exceptions import laziness
+
+user = BarbieWire()
+user.set_technology({
+    'Backend': ('Python', 'Django', 'Django-rest'),
+    'Frontend': (JavaScript, 'HTML5', 'SCCS', 'CSS3', 'React', 'Bootstrap')
+})
 
 try:
-⠀⠀⠀new_learnig_technologies = Im_interested_in.add_argument(c++, c#)
-except Exception as lazy:
-⠀⠀⠀print(F'Not today... {lazy}')
+    new_technologies = user.set_plans()
+    new_technologies.fulfill()
+except laziness:
+⠀⠀⠀print('Something went wrong, I'll try another time...')
 ⠀⠀⠀time.sleep(86400)
     
  
-from companies import joboffer
+from companies import JobOffers
 
-searching_for = joboffer.split('\n')
-for job in searching_for:
-⠀⠀⠀if str(job) == "Google" or str(job) == 'Microsoft':
-⠀⠀⠀⠀⠀⠀print('contact me please, telegram: t.me/barbiewire')
- 
-
-import random
-task_list = ['webscrappers', 'bots', 'databases', 'backend', 'nothing']
-
-today_im_doing = random.choise(task_list)
-if today_im_doing == 'nothing':
-⠀⠀⠀print('Seems like there is nothing... NO TIME TO REST, we are modifying old projects!')
-else:
-⠀⠀⠀print(today_im_doing)
+user.offers = JobOffers()
+for offer in user.offers.toArray():
+⠀⠀⠀if str(offer) == "Google" or str(offer) == 'Microsoft':
+⠀⠀⠀⠀⠀⠀print('telegram: t.me/barbiewire')
 ```
