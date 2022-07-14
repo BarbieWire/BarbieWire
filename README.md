@@ -16,7 +16,7 @@ try:
     new_technologies = user.set_plans()
     new_technologies.fulfill()
 except laziness:
-⠀⠀⠀print('Something went wrong, I'll try another time...')
+⠀⠀⠀print("Something went wrong, I'll try another time...")
 ⠀⠀⠀time.sleep(86400)
     
  
